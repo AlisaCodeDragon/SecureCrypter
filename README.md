@@ -15,6 +15,8 @@ Secure Crypter is a reliable, fast, and effective text encryption library design
 ## Usage 
 
 Here is a simple example demonstrating how to use Secure Crypter:
+- [Random 256-bit Security Key Generator](https://acte.ltd/utils/randomkeygen)
+
 
 > C++
 ```cpp
