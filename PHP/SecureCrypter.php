@@ -31,7 +31,7 @@ class SecureCrypter {
         return $resultData;
     }
 
-    private function decryptcustomStrrevc($data){
+    private function decryptCustomStrrevc($data){
         $length = strlen($data);
         $dividerIndex = floor($length / 2);
         if ($length % 2 !== 0) {
@@ -66,7 +66,7 @@ class SecureCrypter {
     }    
 
     public function decryptData($data) {
-        $decodedData = base64_decode($this->decryptcustomStrrevc($data));
+        $decodedData = base64_decode($this->decryptCustomStrrevc($data));
         if ($decodedData === false || strlen($decodedData) < 48) {
             throw new Exception("Invalid data format.");
         }
@@ -85,6 +85,6 @@ class SecureCrypter {
             throw new Exception("Decryption failed.");
         }
         
-        return $this->decryptcustomStrrevc($decryptedData);
+        return $this->decryptCustomStrrevc($decryptedData);
     }    
 }

@@ -28,7 +28,7 @@ private:
         return resultData;
     }
 
-    std::u8string decryptcustomStrrevc(const std::u8string data) {
+    std::u8string decryptCustomStrrevc(const std::u8string data) {
         std::u8string originalData;
         size_t length = data.length();
         size_t dividerIndex = static_cast<size_t>(std::floor(static_cast<double>(length) / 2.0));
@@ -126,7 +126,7 @@ public:
     }
 
     std::u8string decryptData(std::u8string data) {
-        std::u8string decodedData = base64_decode(decryptcustomStrrevc(data));
+        std::u8string decodedData = base64_decode(decryptCustomStrrevc(data));
         if (decodedData.length() < 48) {
             throw std::runtime_error("Invalid data format.");
         }
@@ -169,6 +169,6 @@ public:
 
         EVP_CIPHER_CTX_free(ctx);
         decryptedData.resize(decryptedLen + finalLen);
-        return decryptcustomStrrevc(decryptedData);
+        return decryptCustomStrrevc(decryptedData);
     }
 };

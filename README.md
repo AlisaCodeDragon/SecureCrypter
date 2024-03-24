@@ -3,9 +3,10 @@
 Secure Crypter is a reliable, fast, and effective text encryption library designed to protect your sensitive data. Developed using industry-standard cryptographic techniques, this encryption solution provides strong security with AES-256 CBC encryption algorithm and HMAC data integrity verification method. Easy to use, Secure Crypter is initialized with a secure key, allowing users to perform data encryption and decryption quickly and securely. Equipped with advanced encryption technology, Secure Crypter is a reliable solution for protecting your sensitive data. By choosing Secure Crypter for your data security, you can store your information with confidence.
 
 ## Languages
-- **CPP:**
-- **C#:** `Soon`
-- **PHP:**
+- **CPP**
+- **C#** `Soon`
+- **Python** `Soon`
+- **PHP**
 
 ## Versions
 - **CPP:** `std:c++20`
